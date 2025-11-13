@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+/* 全体：ブラウザ100％でも125％表示相当に */
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/* ページタイトル */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 1.6rem;
+    font-weight: normal;
+}
+
+/* 共通中央コンテナ */
+.container {
+    max-width: 750px;
+    width: 95%;
+    margin: 1.6rem auto;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* カード共通 */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 25px 31px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 12.5px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 625px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card, p {
+    width: 100%;
+    max-width: 625px;
+    padding: 18.75px 25px;
+    margin: 12.5px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 12.5px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* hover効果 */
+.card:hover, .p:hover, .tweet:hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+    transform: translateY(-2.5px);
+    box-shadow: 0 2.5px 12.5px rgba(0,0,0,0.08);
+}
+
+/* フォーム */
+form {
+    display: flex;
+    gap: 12.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+input[type="text"], input[type="password"] {
+    flex: 1 1 375px;
+    max-width: 500px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.2s;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #1da1f2;
+}
+
+input[type="submit"] {
+    background-color: #0d8ddb;
+    color:#fff;
+    border:none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0099cc;
+    color:#fff;
+    border:none;
+}
+
+/* つぶやきカード */
+.tweet {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 18.75px 25px;
+    margin: 12.5px auto;
+    width: 100%;
+    max-width: 625px;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+/* ヘッダー（アイコン＋ユーザー名） */
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 12.5px;
+    margin-bottom: 12.5px;
+}
+
+.tweet-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ユーザー名 */
+.tweet-username {
+    font-weight: bold;
+    color: #555;
+}
+
+/* つぶやき本文 */
+.tweet-content {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 12.5px;
+}
+
+/* ツイート内アクションボタン */
+.tweet-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    padding: 7.5px 0;
+    background: rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+}
+
+.action-btn {
+    background: transparent;
+    border: none;
+    font-size: 22.5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 7.5px 10px;
+    border-radius: 7.5px;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.action-btn:active {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.like-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-btn span {
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    position: relative;
+}
+
+.like-btn span.liked {
+    color: deeppink;
+    animation: floatSoft 0.75s ease-out forwards;
+}
+
+@keyframes floatSoft {
+    0%   { transform: scale(1); opacity: 0.9; }
+    30%  { transform: scale(1.25); opacity: 1; }
+    60%  { transform: scale(1.05); opacity: 0.85; }
+    100% { transform: scale(1.5); opacity: 0.95; }
+}
+
+.like-btn span.liked::after {
+    animation: like-pop 0.3s forwards;
+}
+
+.like-btn span.liked::before,
+.like-btn span.liked::after {
+    content: '';
+    position: absolute;
+    width: 6.25px;
+    height: 6.25px;
+    border-radius: 50%;
+    background: deeppink;
+    opacity: 0.45;
+    filter: blur(1px);
+    animation: sparkleSoft 1.2s ease-out forwards;
+}
+
+.like-btn span.liked::before { top: -2.5px; left: -11.25px; animation-delay: 0s; }
+.like-btn span.liked::after { top: -2.5px; right: -11.25px; animation-delay: 0.15s; }
+
+@keyframes sparkleSoft {
+    0%   { transform: scale(0.75) translateY(0); opacity: 0.45; }
+    50%  { transform: scale(1.125) translateY(-12.5px); opacity: 0.3; }
+    100% { transform: scale(0.875) translateY(-22.5px); opacity: 0; }
+}
+
+/* つぶやきカード内の削除ボタン */
+.tweet { position: relative; }
+
+.delete-form {
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+}
+
+.delete-btn {
+    border: 1px solid red;
+    background: transparent;
+    color: #ff4d4f;
+    border-radius: 7.5px;
+    padding: 3.75px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* 切り替え */
+.theme-toggle {
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+    width: 31.25px;
+    height: 31.25px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.theme-toggle img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: none;
+}
+
+p {
+    max-width: 625px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 18.75px 25px;
+    margin: 12.5px auto;
+    box-shadow: 0 2.5px 12.5px rgba(0,0,0,0.08);
+    word-wrap: break-word;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+p:hover {
+    transform: translateY(-2.5px);
+    box-shadow: 0 6.25px 18.75px rgba(0,0,0,0.12);
+}
+
+p b { color: #1da1f2; }
+
+/* エラー表示 */
+p.error, .error-message {
+    color: red;
+    margin-bottom: 12.5px;
+    font-size: 1.125rem;
+}
+
+/* リンク */
+a { color: #1da1f2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* モバイル向けレスポンシブフォーム */
+@media (max-width: 783px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7.5px;
+        padding: 7.5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 7.5px;
+        width: 100%;
+    }
+
+    label {
+        min-width: 100px;
+        font-size: 17.5px;
+    }
+
+    input[type="text"], input[type="password"] {
+        flex: 1;
+        padding: 10px 7.5px;
+        font-size: 17.5px;
+        box-sizing: border-box;
+        align-self: center;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        padding: 12.5px 20px;
+        font-size: 17.5px;
+        align-self: center;
+    }
+
+    form:not(.delete-form) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7.5px;
+        padding: 7.5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tweet { position: relative; }
+
+    .delete-form {
+        position: absolute !important;
+        top: 12.5px;
+        right: 12.5px;
+        margin: 0;
+        padding: 0;
+        display: block !important;
+        width: auto;
+    }
+
+    .delete-btn {
+        border: 1px solid red;
+        background: transparent;
+        color: #ff4d4f;
+        border-radius: 7.5px;
+        padding: 3.75px 10px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .delete-btn:hover { background-color: red; color: #fff; }
+
+    .tweet-actions { justify-content: space-evenly; margin-top: 7.5px; padding: 5px 0; }
+
+    .action-btn { font-size: 20px; padding: 5px 7.5px; }
+}

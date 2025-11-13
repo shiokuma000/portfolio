@@ -1,0 +1,50 @@
+# === Build artifacts ===
+/build/
+/target/
+/out/
+/bin/
+*.class
+*.backup
+*.bak
+*~
+*.tmp
+*.log
+
+# === IDE / Environment ===
+/.classpath/
+/.settings/
+/.idea/
+/.vscode/
+/.metadata/
+
+# === OS / System files ===
+.DS_Store
+Thumbs.db
+
+# === Config / Secrets ===
+.env
+*.properties
+
+# ===いいねはいったん見た目だけの実装に ===
+src/main/java/servlet/LikeServlet.java
+src/main/java/model/Like.java
+src/main/java/model/LikeLogic.java
+src/main/java/dao/LikeDAO.java
+
+# === test ===
+src/main/java/test/PasswordUtilTest.java
+src/main/java/test/TestLikes.java
+src/main/java/test/UserDAOLoginTest.java
+src/main/java/test/LikeDAOConsoleTest.java
+src/main/java/test/LoginTestConsole.java
+src/main/java/test/UserDBTest.java
+src/main/java/test/LikeDAOTest.java
+# パスワード系は全部ここに記載
+
+# === db ===
+*.mv.db
+*.trace.db
+
+# === drawio ===
+document/drawio/soloBear.drawio
+# png にしたので抜いてます
