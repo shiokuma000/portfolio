@@ -32,18 +32,6 @@ The like button features a subtle animation with a soft circle floating around t
 
 ---
 
-## 🚀 Setup
-
-You can download and run this app locally.  
-The following folders and settings are required for execution:
-
-- Place the `h2` folder in the root of the project  
-- Initial login credentials:  
-  - ID: test  
-  - Password: test
-
----
-
 ## 💻 Technical Highlights
 
 | Layer | Technology |
