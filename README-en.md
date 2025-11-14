@@ -113,7 +113,7 @@ https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%
 
 ---
 
-## Special Thanks
+## 🌟 Special Thanks
 
 - All the instructors at the vocational training school who taught me valuable skills  
 - TengouIwaharu722  
