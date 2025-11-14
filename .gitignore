@@ -40,10 +40,6 @@ src/main/java/test/UserDBTest.java
 src/main/java/test/LikeDAOTest.java
 # パスワード系は全部ここに記載
 
-# === db ===
-*.mv.db
-*.trace.db
-
 # === drawio ===
 document/drawio/soloBear.drawio
 # png にしたので抜いてます
