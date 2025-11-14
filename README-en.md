@@ -19,6 +19,7 @@ The like button features a subtle animation with a soft circle floating around t
 | 📝 Posting | Posts are organized in a card layout, making them visually easy to read |
 | 💖 Likes | Gentle animations provide pleasant feedback for user actions |
 | 🎨 UI/UX | Elegant, intuitive, and easy-to-use interface design |
+| 🌓 Dark mode CSS included | Enjoy dark mode by changing style.css to dark.css |
 
 ---
 
