@@ -104,7 +104,7 @@ soloBear の各処理やデータベース設計に関する詳細設計書へ�
 
 | いいね |   | 投稿・削除 |
 |----------------|---|-------------------|
-| <img src="assets/likes.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
+| <img src="assets/like.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
 
 ## 🛠 使用したツール
 
