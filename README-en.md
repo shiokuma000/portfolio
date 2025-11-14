@@ -47,7 +47,6 @@ This application can be downloaded and run locally.
 To run it, the following folder and settings are required:
 
 - Clone this.
-- Download the H2DB file from GitHub.
 - Create an `h2` folder on your desktop.
 - Place the downloaded DB file (`soloBear.my.db`) in the `h2` folder.
 - Run it with eclipse.exe or similar and it will work. (Operation confirmed as of 2025-11-14)
