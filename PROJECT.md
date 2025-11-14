@@ -17,6 +17,14 @@
 </details>
 
 <details>
+<summary>🔒db</summary>
+
+- `soloBear.my.db`
+- `soloBear.trace.db`
+
+</details>
+
+<details>
 <summary>📄document</summary>
 <details>
 <summary>🖌️drawio</summary>
@@ -124,6 +132,17 @@
 
 - `logout.jsp`
 - `mainEL.jsp`
+
+</details>
+
+<details>
+<summary>📚lib</summary>
+
+- `h2-2.3.232.jar`
+- `jakarta.servlet.jsp.jstl-3.0.1.jar`
+- `jakarta.servlet.jsp.jstl-api-3.0.0.jar`
+- `jakarta.servlet-api-6.0.0.jar`
+- `jbcrypt-0.4.jar`
 
 </details>
 
