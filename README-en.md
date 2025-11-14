@@ -73,6 +73,14 @@ To run it, the following folder and settings are required:
 
 ---
 
+## 💼 Project Structure
+
+- [🪄 Project Structure](PROJECT.md)
+
+It's posted here. I'd appreciate it if you could take a look.
+
+---
+
 ## 🎬 Demo
 
 | Like |   | Post & Delete |
