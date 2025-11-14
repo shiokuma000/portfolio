@@ -109,6 +109,13 @@ Click to view each document.
 
 ---
 
+## 💡 License and Copyright
+
+- This project was created for educational purposes and is not intended for commercial use.
+- Licenses for various libraries and tools belong to their respective authors.
+
+---
+
 ## 📸 Illustration Credits
 
 Illustration source: Footprints – Pixabay  
@@ -116,7 +123,15 @@ https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%
 
 ---
 
+## 🗓️Last ​​updated
+
+2025-11-14
+
+---
+
 ## 🌟 Special Thanks
+
+Lastly,
 
 - All the instructors at the vocational training school who taught me valuable skills  
 - TengouIwaharu722  
