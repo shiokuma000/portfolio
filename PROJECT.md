@@ -9,6 +9,33 @@
 </details>
 
 <details>
+<summary>🎬assets</summary>
+
+- `like.gif`
+- `post.gif`
+
+</details>
+
+<details>
+<summary>📄document</summary>
+<details>
+<summary>🖌️drawio</summary>
+
+- `ER.png`
+- `login.png`
+- `logout.png`
+- `main.png`
+
+</details>
+
+- `ER.md`
+- `LOGIN.md`
+- `LOGOUT.md`
+- `MAIN.md`
+
+</details>
+
+<details>
 <summary>💻src/main/java</summary>
 
 <details>
@@ -52,16 +79,17 @@
 
 </details>
 
-</details>
-
 <details>
-<summary>🟪src/main/test</summary>
+<summary>🟪test</summary>
 
 - `MutterDBTest.java`
 - `UserDAOLoginTest.java`
 - `UserDBTest.java`
 
 </details>
+
+</details>
+
 
 <details>
 <summary>🌐webapp</summary>
