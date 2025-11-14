@@ -45,6 +45,7 @@ To run it, the following folder and settings are required:
   - Password: test
 
 ※ Security is not guaranteed. Please use this for development and testing purposes only.
+※ We plan to convert it to Maven in the future and improve it so that it can be connected even without this.
 
 
 ---
