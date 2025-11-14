@@ -67,17 +67,14 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 ## 🎬 動作例
 
-<p float="left" align="middle">
-  <figure>
-    <img src="assets/like.gif" width="300" />
-    <figcaption>いいね</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/post.gif" width="300" />
-    <figcaption>投稿・削除</figcaption>
-  </figure>
-</p>
+## 🎬 動作例
 
+| いいね | 投稿・削除 |
+|----------------|-------------------|
+| <img src="assets/like.gif" width="300" /> | <img src="assets/post.gif" width="300" /> |
+
+
+※GIF画像をクリックすると拡大されます
 
 ---
 
