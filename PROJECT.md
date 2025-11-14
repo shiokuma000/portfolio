@@ -9,6 +9,33 @@
 </details>
 
 <details>
+<summary>🎬assets</summary>
+
+- `like.gif`
+- `post.gif`
+
+</details>
+
+<details>
+<summary>📄document</summary>
+<details>
+<summary>🖌️drawio</summary>
+
+- `ER.png`
+- `login.png`
+- `logout.png`
+- `main.png`
+
+</details>
+
+- `ER.md`
+- `LOGIN.md`
+- `LOGOUT.md`
+- `MAIN.md`
+
+</details>
+
+<details>
 <summary>💻src/main/java</summary>
 
 <details>
