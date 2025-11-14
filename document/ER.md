@@ -13,8 +13,6 @@
 
 ## 2. テーブル一覧
 
-## 2. テーブル一覧
-
 | テーブル名       | カラム名       | 型/長さ | 制約                       | 備考 |
 |-----------------|----------------|---------|----------------------------|------|
 | 🧸 USERS        | ID             | INT     | PRIMARY KEY                | 自動採番 |
@@ -28,6 +26,12 @@
 | ❤️ LIKES        | ID             | INT     | PRIMARY KEY                | 自動採番 |
 |                 | TWEET_ID       | INT     | FOREIGN KEY → MUTTERS(ID)  | 対象投稿ID |
 |                 | USER_ID        | INT     | FOREIGN KEY → USERS(ID)    | いいねしたユーザーID |
+
+
+### 2-1. ER図
+[![ER図](drawio/ER.png)](drawio/ER.png)
+
+※ 画像をクリックすると拡大表示されます。
 
 
 ---
