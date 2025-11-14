@@ -74,6 +74,14 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 ※GIF画像をクリックすると拡大されます
 
+## 🛠 使用したツール
+
+- ✂️ ビデオ編集：CapCut
+- 🎞 GIF画像生成：ラッコツール
+- 🔄 MP4変換：FreeConvert
+- 🗜 GIF軽量化：iLoveIMG
+
+
 ---
 
 ## 📚 設計書一覧
