@@ -32,6 +32,23 @@ The like button features a subtle animation with a soft circle floating around t
 
 ---
 
+## 🚀 Setup
+
+This application can be downloaded and run locally.  
+To run it, the following folder and settings are required:
+
+- Download the H2DB file from GitHub.
+- Create an `h2` folder on your desktop.
+- Place the downloaded DB file (`soloBear.my.db`) into the `h2` folder.
+- Default login credentials:
+  - ID: test
+  - Password: test
+
+※ Security is not guaranteed. Please use this for development and testing purposes only.
+
+
+---
+
 ## 💻 Technical Highlights
 
 | Layer | Technology |
