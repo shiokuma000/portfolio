@@ -79,16 +79,17 @@
 
 </details>
 
-</details>
-
 <details>
-<summary>🟪src/main/test</summary>
+<summary>🟪test</summary>
 
 - `MutterDBTest.java`
 - `UserDAOLoginTest.java`
 - `UserDBTest.java`
 
 </details>
+
+</details>
+
 
 <details>
 <summary>🌐webapp</summary>
