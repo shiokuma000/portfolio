@@ -15,9 +15,10 @@ import util.PasswordUtil;
  */
 public class UserDAO {
 
-    private final String JDBC_URL = "jdbc:h2:~/desktop/h2/soloBear";
-    private final String DB_USER = "sa";
-    private final String DB_PASS = "";
+	private final String JDBC_URL = "jdbc:h2:~/desktop/h2/soloBear";
+	private final String DB_USER = "sa";
+	private final String DB_PASS = "";
+
 
     // コンストラクタでH2ドライバをロード
     public UserDAO() {

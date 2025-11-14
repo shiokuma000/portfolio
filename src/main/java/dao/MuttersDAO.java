@@ -13,9 +13,11 @@ import model.Mutter;
 
 
 public class MuttersDAO {
-    private final String JDBC_URL = "jdbc:h2:~/desktop/h2/soloBear";
-    private final String DB_USER = "sa";
-    private final String DB_PASS = "";
+
+	private final String JDBC_URL = "jdbc:h2:~/desktop/h2/soloBear";
+	private final String DB_USER = "sa";
+	private final String DB_PASS = "";
+
 
     // 全件取得（いいね情報も含む）
     public List<Mutter> findAll(int loginUserId) {
