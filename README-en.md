@@ -33,6 +33,14 @@ The like button features a subtle animation with a soft circle floating around t
 
 ---
 
+## 💼 Project Structure
+
+- [🪄 Project Structure](PROJECT.md)
+
+It's posted here. I'd appreciate it if you could take a look.
+
+---
+
 ## 🚀 Setup
 
 This application can be downloaded and run locally.  
@@ -70,14 +78,6 @@ To run it, the following folder and settings are required:
 | 🔁 Replies & Reposts | Planning to add interactions and sharing features for posts |
 | 🧑‍💻 New user registration | Will support registration for any user |
 | 🔐 Password reset | Will support email/SMS-based password reset for forgotten passwords |
-
----
-
-## 💼 Project Structure
-
-- [🪄 Project Structure](PROJECT.md)
-
-It's posted here. I'd appreciate it if you could take a look.
 
 ---
 
