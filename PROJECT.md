@@ -11,7 +11,7 @@
 <details>
 <summary>🎬assets</summary>
 
-- `likes.gif`
+- `like.gif`
 - `post.gif`
 
 </details>
