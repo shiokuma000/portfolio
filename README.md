@@ -7,20 +7,20 @@
 ## 👩‍💻 使用技術
 
 <p align="left">
-  <!-- Frontend：やや暗めグレー -->
-  <img src="https://img.shields.io/badge/HTML-8A8A8A.svg?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-8A8A8A.svg?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-8A8A8A.svg?style=for-the-badge&logoColor=white" />
+  <!-- Frontend：暗めグレー -->
+  <img src="https://img.shields.io/badge/HTML-6E6E6E.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-6E6E6E.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-6E6E6E.svg?style=for-the-badge&logoColor=white" />
 
-  <!-- Backend：もう少し深いグレー -->
-  <img src="https://img.shields.io/badge/Java-555555.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Servlet%2FJSP-555555.svg?style=for-the-badge&logo=java&logoColor=white" />
+  <!-- Backend：中間ダークグレー -->
+  <img src="https://img.shields.io/badge/Java-3F3F3F.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlet%2FJSP-3F3F3F.svg?style=for-the-badge&logo=java&logoColor=white" />
 
-  <!-- Tools / DB：黒に近い深灰 -->
-  <img src="https://img.shields.io/badge/H2%20Database-2F2F2F.svg?style=for-the-badge&logo=h2&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apache%20Tomcat-2F2F2F.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-2F2F2F.svg?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-2F2F2F.svg?style=for-the-badge&logo=github&logoColor=white" />
+  <!-- Tools / DB：かなり暗いチャコールブラック -->
+  <img src="https://img.shields.io/badge/H2%20Database-1C1C1C.svg?style=for-the-badge&logo=h2&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-1C1C1C.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-1C1C1C.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-1C1C1C.svg?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
@@ -70,7 +70,7 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 - こちらをcloneしてください。
 - `h2` フォルダをデスクトップに作成してください。
 - ダウンロードした DB ファイル（`soloBear.my.db`,`soloBear.trace.db`)を `h2` フォルダに入れてください。
-- eclipse.exeなどで実行すると動作いたします。（2025-11-14 動作確認済み）
+- eclipse.exeなどで「フォルダ」右クリック → 「サーバーで実行」をすると動作いたします。（2025-11-14 動作確認済み）
 - 初期ログイン情報  
   - ID: test  
   - Password: test
