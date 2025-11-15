@@ -29,7 +29,7 @@
 
 ## ✨ Overview
 
-soloBear is a simple, Twitter-style microblogging app.  
+soloBear is a small blog app with a card-style design that allows you to enjoy short posts and simple interactions.
 It is based on a program created during a vocational training class, which I customized with my own features and design improvements.  
 Using card layouts and animations, it provides an intuitive and pleasant user experience.
 
