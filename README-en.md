@@ -1,6 +1,8 @@
 # 🧸 soloBear – Card-Style Microblog App
 
-🌏 Language Switch: [日本語](README.md) | [English](README-en.md)
+🌏 Language Switch: [Japanese](README.md) | [English](README-en.md)
+
+※I'm sorry if there are parts that are hard to read because I'm using a translator.
 
 ---
 
@@ -68,8 +70,8 @@ This app can be downloaded and run locally. The following folders and settings a
 | 🗄️ DB | Maintains integrity with 3 tables + foreign keys |
 | 🔐 Security | Passwords hashed and salted with Bcrypt |
 | ⚡ Frontend | Posting cards and animations for intuitive UX |
-| 🖥️ Backend | Simple processing with extensibility |
-| 🧩 Debugging | Cache handling ensures stable operation |
+| 🖥️ Backend | Simple post management with PRG pattern |
+| 🧩 Debugging | Cache handling and log checks for stable operation and improved development efficiency |
 
 ---
 
