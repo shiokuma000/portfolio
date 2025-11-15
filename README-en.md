@@ -11,20 +11,20 @@
 ## 👩‍💻 Technologies Used
 
 <p align="left">
-  <!-- Frontend：やや暗めグレー -->
-  <img src="https://img.shields.io/badge/HTML-8A8A8A.svg?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-8A8A8A.svg?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-8A8A8A.svg?style=for-the-badge&logoColor=white" />
+  <!-- Frontend：暗めグレー -->
+  <img src="https://img.shields.io/badge/HTML-6E6E6E.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-6E6E6E.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-6E6E6E.svg?style=for-the-badge&logoColor=white" />
 
-  <!-- Backend：もう少し深いグレー -->
-  <img src="https://img.shields.io/badge/Java-555555.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Servlet%2FJSP-555555.svg?style=for-the-badge&logo=java&logoColor=white" />
+  <!-- Backend：中間ダークグレー -->
+  <img src="https://img.shields.io/badge/Java-3F3F3F.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlet%2FJSP-3F3F3F.svg?style=for-the-badge&logo=java&logoColor=white" />
 
-  <!-- Tools / DB：黒に近い深灰 -->
-  <img src="https://img.shields.io/badge/H2%20Database-2F2F2F.svg?style=for-the-badge&logo=h2&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apache%20Tomcat-2F2F2F.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-2F2F2F.svg?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-2F2F2F.svg?style=for-the-badge&logo=github&logoColor=white" />
+  <!-- Tools / DB：かなり暗いチャコールブラック -->
+  <img src="https://img.shields.io/badge/H2%20Database-1C1C1C.svg?style=for-the-badge&logo=h2&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-1C1C1C.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-1C1C1C.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-1C1C1C.svg?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
@@ -73,7 +73,7 @@ This app can be downloaded and run locally. The following folders and settings a
 - Clone this repository.
 - Create an `h2` folder on your desktop.
 - Place the downloaded DB file (`soloBear.my.db`,`soloBear.trace.db`) into the `h2` folder.
-- Run using `eclipse.exe` or similar. (Confirmed working on 2025-11-14)
+- Select "Project" in eclipse.exe etc., then right-click and select "Run on Server" to run the project. (Operation confirmed on 2025-11-14)
 - Initial login credentials:  
   - ID: test  
   - Password: test
