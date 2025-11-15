@@ -1,6 +1,6 @@
 # 🧸 soloBear – Card-Style Microblog App
 
-🌏 Language Switch: [日本語](README.md) / [English](README-en.md)
+🌏 Language Switch: [Japanese](README.md) | [English](README-en.md)
 
 ---
 
@@ -29,9 +29,9 @@
 
 ## ✨ Overview
 soloBear is a simple, Twitter-style microblogging app.  
-It is based on a program created during class, which I customized by adding my own features and design improvements.  
-The card-style layout organizes posts for better readability and provides a clean, visually pleasing display across all devices.  
-The like button features a subtle animation with a soft circle floating around the heart, giving gentle feedback for user interactions.
+It is based on a program created during a vocational training class, which I customized with my own features and design improvements.  
+The card-style layout organizes posts for readability and provides a clean, elegant display across different environments.  
+The like button features a subtle animation, with a soft circle appearing around the heart, offering gentle feedback to user interactions.
 
 ---
 
@@ -39,20 +39,20 @@ The like button features a subtle animation with a soft circle floating around t
 
 | Feature | Description |
 |---------|-------------|
-| 📝 Posting | Posts are organized in a card layout, making them visually easy to read |
-| 💖 Likes | Gentle animations provide pleasant feedback for user actions |
-| 🎨 UI/UX | Elegant, intuitive, and easy-to-use interface design |
-| 🌓 Dark mode CSS included | Enjoy dark mode by changing style.css to dark.css |
+| 📝 Posting | Posts are organized in a card format, making them visually easy to read |
+| 💖 Like Button | Gentle animation provides a pleasant response to user interactions |
+| 🎨 UI/UX | Elegant, intuitive, and easy-to-use design |
+| 🌓 Dark Mode CSS | Switch from `style.css` to `dark.css` to enjoy dark mode |
 
 ---
 
-## 🔧 Under the Hood
+## 🔧 Backend Details
 
 | Item | Description |
 |------|-------------|
-| 🗄️ Database | 3-table structure with foreign key management to maintain data integrity |
-| 🔐 Security | Passwords are hashed and salted using Bcrypt for safe storage |
-| 🧩 Caching & Debug | Cache handling and debugging checks ensure stable operation |
+| 🗄️ Database | Managed with three tables and foreign keys to maintain data integrity |
+| 🔐 Security | Passwords hashed and salted with Bcrypt for secure management |
+| 🧩 Caching & Debugging | Cache handling and debug checks ensure stable operation |
 
 ---
 
@@ -60,37 +60,34 @@ The like button features a subtle animation with a soft circle floating around t
 
 - [🪄 Project Structure](PROJECT.md)
 
-It's posted here. I'd appreciate it if you could take a look.
+  The structure is provided here; feel free to check it out.
 
 ---
 
 ## 🚀 Setup
 
-This application can be downloaded and run locally.  
-To run it, the following folder and settings are required:
+This app can be downloaded and run locally. The following folders and settings are required:
 
-- Clone this.
+- Clone this repository.
 - Create an `h2` folder on your desktop.
-- Place the downloaded DB file (`soloBear.my.db`) in the `h2` folder.
-- Run it with eclipse.exe or similar and it will work. (Operation confirmed as of 2025-11-14)
-- Default login credentials:
-  - ID: test
+- Place the downloaded DB file (`soloBear.my.db`) into the `h2` folder.
+- Run using `eclipse.exe` or similar. (Confirmed working on 2025-11-14)
+- Initial login credentials:  
+  - ID: test  
   - Password: test
 
-※ Security is not guaranteed. Please use this for development and testing purposes only.
-
-※ We plan to convert it to Maven in the future and improve it so that it can be connected even without this.
-
+※ Security is not guaranteed. Use for development and testing purposes only.  
+※ Future updates will migrate to Maven, allowing connection without the DB file.
 
 ---
 
-## 💻 Technical Highlights
+## 💻 Technical Points
 
 | Layer | Technology |
 |-------|------------|
-| ⚡ Frontend | HTML / CSS / JavaScript to build an interactive UI |
-| 🖥️ Backend | Simple server processing and data management for core functionality |
-| 🚀 Extensibility | Future additions such as like counts and notifications are possible |
+| ⚡ Frontend | Interactive UI built with HTML / CSS / JavaScript |
+| 🖥️ Backend | Provides basic server processing and data management |
+| 🚀 Extensibility | Future enhancements such as like counts and notifications possible |
 
 ---
 
@@ -98,64 +95,66 @@ To run it, the following folder and settings are required:
 
 | Item | Description |
 |------|-------------|
-| 💖 Like count & state saving | Currently visual only; will store per-user data in the database in the future |
-| 🔁 Replies & Reposts | Planning to add interactions and sharing features for posts |
-| 🧑‍💻 New user registration | Will support registration for any user |
-| 🔐 Password reset | Will support email/SMS-based password reset for forgotten passwords |
-
----
-
-## 🎬 Demo
-
-| Like |   | Post & Delete |
-|------|---|---------------|
-| <img src="assets/like.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
-
-*Click on the GIFs to enlarge*
-
-## 🛠 Tools Used
-
-- ✂️ Video Editing: CapCut
-- 🎞 GIF Generation: Rakko Tool
-- 🔄 MP4 Conversion: FreeConvert
-- 🗜 GIF Compression: iLoveIMG
+| 💖 Like Count & State Saving | Currently visual only; future plan to save per user in DB |
+| 🔁 Reply & Repost | Considering adding interaction and sharing features for posts |
+| 🧑‍💻 New User Registration | Plan to allow anyone to register |
+| 🔐 Password Reset | Future support for password reset via email or SMS |
 
 ---
 
 ## 📚 Design Documents
 
-Links to detailed design documents for soloBear's processes and database structure.  
-Click to view each document.
+Links to detailed design documents for soloBear’s processes and database design.  
+Click to open each document.
 
 - [🔑 Login Process Design](document/LOGIN.md)  
-  Details of the user login flow, screen structure, and session management
+  Flow, screen layout, and session management until user login
 
 - [📝 Logout Process Design](document/LOGOUT.md)  
-  Details of the logout flow for logged-in users
+  Flow and screen layout for logging out while logged in
 
-- [✏️ Posting & Deleting Process Design](document/MAIN.md)  
-  Detailed flow for adding and deleting posts, based on MVC structure
+- [✏️ Post/Delete Process Design](document/MAIN.md)  
+  Flow for adding/deleting posts, detailed MVC explanations
 
 - [🗄️ SQL Table Design](document/ER.md)  
   Structure, constraints, and notes for USERS / MUTTERS / LIKES tables
 
 ---
 
-## 💡 License and Copyright
+## 🚀 Demo
 
-- This project was created for educational purposes and is not intended for commercial use.
-- Licenses for various libraries and tools belong to their respective authors.
+| Like |   | Post/Delete |
+|------|---|-------------|
+| <img src="assets/like.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
 
----
-
-## 📸 Illustration Credits
-
-Illustration source: Footprints – Pixabay  
-https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88-%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88-%E8%B6%B3-1314467/
+※ Click images to enlarge.
 
 ---
 
-## 🗓️Last ​​updated
+## 🛠 Tools Used
+
+- ✂️ Video Editing: CapCut
+- 🎞 GIF Generation: Rakko Tools
+- 🔄 MP4 Conversion: FreeConvert
+- 🗜 GIF Compression: iLoveIMG
+
+---
+
+## 💡 License & Copyright
+
+- This project was created for learning purposes and is not intended for commercial use.  
+- Licenses of libraries and tools belong to their respective authors.
+
+---
+
+## 📸 References
+
+Illustration source: Footprint illustration – Pixabay  
+https://pixabay.com/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88-%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88-%E8%B6%B3-1314467/
+
+---
+
+## 🗓️ Last Updated
 
 2025-11-15
 
@@ -163,11 +162,10 @@ https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%
 
 ## 🌟 Special Thanks
 
-Lastly,
+Finally, thanks to:
 
-- All the instructors at the vocational training school who taught me valuable skills  
+- All instructors who taught skills at the vocational training school  
 - TengouIwaharu722  
-- Everyone who has visited this page  
+- Everyone visiting this page  
 
-Thank you very much! I will continue to do my best.
-
+I sincerely appreciate your support and will continue to improve!
