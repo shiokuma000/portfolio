@@ -1,6 +1,6 @@
 # 🧸 soloBear – Card-Style Microblog App
 
-🌏 Language Switch: [Japanese](README.md) | [English](README-en.md)
+🌏 Language Switch: [日本語](README.md) | [English](README-en.md)
 
 ---
 
