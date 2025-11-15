@@ -8,21 +8,21 @@
 
 <p align="left">
   <!-- Frontend -->
-  <img src="https://img.shields.io/badge/HTML-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML-000000.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-000000.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-000000.svg?style=for-the-badge&logoColor=white" />
 
   <!-- Backend -->
-  <img src="https://img.shields.io/badge/Java-007396.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Servlet/JSP-4D4D4D.svg?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-000000.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlet%2FJSP-000000.svg?style=for-the-badge&logo=java&logoColor=white" />
 
   <!-- Database -->
-  <img src="https://img.shields.io/badge/H2%20Database-007AAC.svg?style=for-the-badge&logo=h2&logoColor=white" />
+  <img src="https://img.shields.io/badge/H2%20Database-000000.svg?style=for-the-badge&logo=h2&logoColor=white" />
 
   <!-- Tools -->
-  <img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black" />
-  <img src="https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-000000.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-000000.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-000000.svg?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 ---
