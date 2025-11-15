@@ -4,6 +4,10 @@
 
 ---
 
+※ I'm sorry if there are parts that are hard to read because I'm using a translator.
+
+---
+
 ## 👩‍💻 Technologies Used
 
 <p align="left">
