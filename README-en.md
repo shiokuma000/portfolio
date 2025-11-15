@@ -26,13 +26,10 @@
 </p>
 
 ---
-
 ## ✨ Overview
-soloBear is a simple, Twitter-style microblogging app.  
-It is based on a program created during vocational school classes, which I customized by adding my own features and design improvements.  
-The card-style layout organizes posts, making them visually clear and easy to read, while offering an elegant display across all environments.  
-The like button features a subtle animation with a soft circle floating around the heart, providing gentle feedback for user interactions.
-
+soloBear is a simple Twitter-style microblogging app.
+I developed it based on a program I made in a vocational training class, arranging the functions and design to my own liking.
+Its main features are as follows:
 ---
 
 ## 🎯 Key Features
