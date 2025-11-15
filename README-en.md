@@ -27,6 +27,7 @@
 
 ---
 ## ✨ Overview
+
 soloBear is a simple Twitter-style microblogging app.
 I developed it based on a program I made in a vocational training class, arranging the functions and design to my own liking.
 Its main features are as follows:
