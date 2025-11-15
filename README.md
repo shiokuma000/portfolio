@@ -4,7 +4,7 @@
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ 使用技術
 
 <p align="left">
   <!-- Frontend -->
