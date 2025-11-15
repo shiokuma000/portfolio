@@ -6,7 +6,6 @@
 
 ## 👩‍💻 使用技術
 
-<br>
 
 <p align="left">
   <!-- Frontend：濃いチャコール -->
