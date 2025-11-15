@@ -74,7 +74,7 @@ This app can be downloaded and run locally. The following folders and settings a
 
 - Clone this repository.
 - Create an `h2` folder on your desktop.
-- Place the downloaded DB file (`soloBear.my.db`) into the `h2` folder.
+- Place the downloaded DB file (`soloBear.my.db`,`soloBear.trace.db`) into the `h2` folder.
 - Run using `eclipse.exe` or similar. (Confirmed working on 2025-11-14)
 - Initial login credentials:  
   - ID: test  
