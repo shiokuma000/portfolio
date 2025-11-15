@@ -6,6 +6,8 @@
 
 ## 👩‍💻 使用技術
 
+<br>
+
 <p align="left">
   <!-- Frontend：濃いチャコール -->
   <img src="https://img.shields.io/badge/HTML-3A3A3A.svg?style=for-the-badge&logoColor=white" />
@@ -49,7 +51,7 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 このアプリはダウンロードしてローカルで動作させることができます。
 実行にあたり、以下のフォルダと設定が必要です。
 
-- こちらをcloneしてください。
+- - このリポジトリを clone してください。（例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
 - `h2` フォルダをデスクトップに作成してください。
 - ダウンロードした DB ファイル（`soloBear.my.db`,`soloBear.trace.db`)を `h2` フォルダに入れてください。
 - eclipse.exeなどで、クローンしたこちらの動的プロジェクトを選択し、右クリック → 「サーバーで実行」をすると動作いたします。（2025-11-14 動作確認済み）
@@ -77,8 +79,8 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 - [🪄 プロジェクト構成](PROJECT.md)
 
-　アプリ全体のフォルダ構成や MVC の流れをまとめています。
-　目を通していただけましたら幸いです。
+　アプリ全体のフォルダ構成や MVC の流れをまとめた資料です。
+　開発内容をより深く確認したい方に向けています。
 
 ---
 
@@ -125,7 +127,7 @@ soloBear の各処理やデータベース設計に関する詳細設計書へ�
 
 | いいね |   | 投稿・削除 |
 |----------------|---|-------------------|
-| <img src="assets/like.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
+| <img src="assets/like.gif" width="280" /> |   | <img src="assets/post.gif" width="280" /> |
 
 ※画像をクリックすると拡大表示されます。
 
