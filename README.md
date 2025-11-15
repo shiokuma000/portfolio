@@ -51,7 +51,7 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 このアプリはダウンロードしてローカルで動作させることができます。
 実行にあたり、以下のフォルダと設定が必要です。
 
-- - このリポジトリを clone してください。（例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
+- このリポジトリを clone してください。（例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
 - `h2` フォルダをデスクトップに作成してください。
 - ダウンロードした DB ファイル（`soloBear.my.db`,`soloBear.trace.db`)を `h2` フォルダに入れてください。
 - eclipse.exeなどで、クローンしたこちらの動的プロジェクトを選択し、右クリック → 「サーバーで実行」をすると動作いたします。（2025-11-14 動作確認済み）
