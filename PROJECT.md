@@ -9,7 +9,7 @@
 </details>
 
 <details>
-<summary>🎫assets</summary>
+<summary>👜assets</summary>
 
 - `like.gif`
 - `post.gif`
