@@ -2,6 +2,8 @@
 
 🌏 Language Switch: [Japanese](README.md) | [English](README-en.md)
 
+※ I'm sorry if there are parts that are hard to read because I'm using a translator.
+
 ---
 
 ## 👩‍💻 Technologies Used
