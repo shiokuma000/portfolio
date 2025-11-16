@@ -79,9 +79,11 @@ This app can be downloaded and run locally. The following folders and settings a
 
 | Item | Description |
 |------|-------------|
-| 💖 Like Count & State Saving | Currently visual only; future plan to save per user in DB |
+| 💖 Like Count & State Saving | Future plan to save per user in DB |
 | 🔁 Reply & Repost | Considering adding interaction and sharing features for posts |
 | 🧑‍💻 New User Registration | Plan to allow anyone to register |
+
+※ The current Like feature is cosmetic only, but we are retaining the LIKES table and related SQL in preparation for future implementation.
 
 ---
 
