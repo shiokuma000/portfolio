@@ -68,7 +68,7 @@ This app can be downloaded and run locally. The following folders and settings a
 | Layer | Details / Intent |
 |-------|----------------|
 | 🗄️ DB | Maintains integrity with 3 tables + foreign keys |
-| 🔐 Security | Passwords hashed and salted with Bcrypt |
+| 🔐 Security | Passwords hashed and salted with BCrypt |
 | ⚡ Frontend | Posting cards and animations for intuitive UX |
 | 🖥️ Backend | Simple post management with PRG pattern |
 | 🧩 Debugging | Cache handling and log checks for stable operation and improved development efficiency |
@@ -120,7 +120,7 @@ Illustration source: Footprint illustration – Pixabay
 
 ## 🗓️ Last Updated
 
-2025-11-15
+2025-11-16
 
 ---
 
