@@ -32,19 +32,11 @@
 [![ER図](drawio/ER.png)](drawio/ER.png)
 
 ※ 画像をクリックすると拡大表示されます。
-
-
----
-
-## 3. 外部キー関係
-
-- `MUTTERS.USER_ID` → `USERS.ID`  
-- `LIKES.TWEET_ID` → `MUTTERS.ID`  
-- `LIKES.USER_ID` → `USERS.ID`  
+ 
 
 ---
 
-## 4. ポイントまとめ
+## 3. ポイントまとめ
 
 - **一意性:** `USERS.LOGIN_NAME` はユニーク制約により、重複不可。  
 - **整合性:** 外部キー制約で投稿やいいねは存在するユーザーや投稿に紐付けられる。  
