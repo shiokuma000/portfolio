@@ -29,7 +29,7 @@ public class MuttersDAO {
                      "THEN TRUE ELSE FALSE END AS liked_by_user " +
                      "FROM MUTTERS M " +
                      "JOIN USERS U ON M.USER_ID = U.ID " +
-                     "LEFT JOIN LIKES L ON L.TWEET_ID = M.ID " +
+                     "LEFT JOIN LIKES L ON L.TWEET_ID = M.ID AND L.USER_ID IS NOT NULL " +
                      "GROUP BY M.ID, M.USER_ID, M.TEXT, U.NAME " +
                      "ORDER BY M.ID DESC";
 
