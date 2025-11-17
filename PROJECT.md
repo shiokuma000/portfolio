@@ -1,7 +1,7 @@
 # soloBear プロジェクト構成
 
 <details>
-<summary>📄README.md / .gitignore</summary>
+<summary>📕README.md / .gitignore</summary>
 
 - `README.md`
 - `.gitignore`
@@ -9,9 +9,9 @@
 </details>
 
 <details>
-<summary>🎬assets</summary>
+<summary>👜assets</summary>
 
-- `likes.gif`
+- `like.gif`
 - `post.gif`
 
 </details>
@@ -27,7 +27,7 @@
 <details>
 <summary>📄document</summary>
 <details>
-<summary>🖌️drawio</summary>
+<summary>drawio</summary>
 
 - `ER.png`
 - `login.png`
@@ -47,7 +47,7 @@
 <summary>💻src/main/java</summary>
 
 <details>
-<summary>🟦servlet</summary>
+<summary>🎬servlet</summary>
 
 - `DriverCleanupListener.java`
 - `Login.java`
@@ -57,7 +57,7 @@
 </details>
 
 <details>
-<summary>🟦dao</summary>
+<summary>dao</summary>
 
 - `MuttersDAO.java`
 - `UserDAO.java`
@@ -65,14 +65,14 @@
 </details>
 
 <details>
-<summary>🟦filter</summary>
+<summary>filter</summary>
 
 - `LoginFilter.java`
 
 </details>
 
 <details>
-<summary>🟦model</summary>
+<summary>☕️model</summary>
 
 - `GetMutterListLogic.java`
 - `LoginLogic.java`
@@ -82,14 +82,14 @@
 </details>
 
 <details>
-<summary>🟦util</summary>
+<summary>util</summary>
 
 - `PasswordUtil.java`
 
 </details>
 
 <details>
-<summary>🟪test</summary>
+<summary>📝test</summary>
 
 - `MutterDBTest.java`
 - `SessionEL.java`
@@ -103,7 +103,7 @@
 <summary>🌐webapp</summary>
 
 <details>
-<summary>🟩css</summary>
+<summary>🎨css</summary>
 
 - `dark.css`
 - `style.css`
@@ -111,7 +111,7 @@
 </details>
 
 <details>
-<summary>🟩images</summary>
+<summary>📸images</summary>
 
 - `bear.jpg`
 - `mark.png`
@@ -126,10 +126,10 @@
 </details>
 
 <details>
-<summary>🟩WEB-INF</summary>
+<summary>🧸WEB-INF</summary>
 
 <details>
-<summary>🟨jsp</summary>
+<summary>🖼jsp</summary>
 
 - `logout.jsp`
 - `mainEL.jsp`

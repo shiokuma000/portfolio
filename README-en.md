@@ -1,14 +1,37 @@
 # 🧸 soloBear – Card-Style Microblog App
 
-🌏 Language Switch: [日本語](README.md) / [English](README-en.md)
+🌏 Language Switch: [日本語](README.md) | [English](README-en.md)
+
+※I'm sorry if there are parts that are hard to read because I'm using a translator.
+
+---
+
+## 👩‍💻 Technologies Used
+
+<p align="left">
+  <!-- Frontend: Dark Charcoal -->
+  <img src="https://img.shields.io/badge/HTML-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+
+  <!-- Backend: Almost Black Dark Gray -->
+  <img src="https://img.shields.io/badge/Java-1E1E1E.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlet%2FJSP-1E1E1E.svg?style=for-the-badge&logo=java&logoColor=white" />
+
+  <!-- Tools / DB: Pure Black -->
+  <img src="https://img.shields.io/badge/H2%20Database-000000.svg?style=for-the-badge&logo=h2&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-000000.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-000000.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-000000.svg?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
 ---
 
 ## ✨ Overview
-soloBear is a simple, Twitter-style microblogging app.  
-It is based on a program created during class, which I customized by adding my own features and design improvements.  
-The card-style layout organizes posts for better readability and provides a clean, visually pleasing display across all devices.  
-The like button features a subtle animation with a soft circle floating around the heart, giving gentle feedback for user interactions.
+
+soloBear is a small blog app with a card-style design that allows you to enjoy short posts and simple interactions.
+It is based on a program created during a vocational training class, which I customized with my own features and design improvements.  
+Using card layouts and animations, it provides an intuitive and pleasant user experience.
 
 ---
 
@@ -16,58 +39,39 @@ The like button features a subtle animation with a soft circle floating around t
 
 | Feature | Description |
 |---------|-------------|
-| 📝 Posting | Posts are organized in a card layout, making them visually easy to read |
-| 💖 Likes | Gentle animations provide pleasant feedback for user actions |
-| 🎨 UI/UX | Elegant, intuitive, and easy-to-use interface design |
-| 🌓 Dark mode CSS included | Enjoy dark mode by changing style.css to dark.css |
-
----
-
-## 🔧 Under the Hood
-
-| Item | Description |
-|------|-------------|
-| 🗄️ Database | 3-table structure with foreign key management to maintain data integrity |
-| 🔐 Security | Passwords are hashed and salted using Bcrypt for safe storage |
-| 🧩 Caching & Debug | Cache handling and debugging checks ensure stable operation |
-
----
-
-## 💼 Project Structure
-
-- [🪄 Project Structure](PROJECT.md)
-
-It's posted here. I'd appreciate it if you could take a look.
+| 📝 Posting | Posts are organized in a card format, making them visually easy to read |
+| 💖 Like Button | Gentle animation provides a pleasant response to user interactions |
+| 🎨 UI/UX | Elegant, intuitive, and easy-to-use design |
+| 🌓 Dark Mode CSS | Switch from `style.css` to `dark.css` to enjoy dark mode |
 
 ---
 
 ## 🚀 Setup
 
-This application can be downloaded and run locally.  
-To run it, the following folder and settings are required:
+This app can be downloaded and run locally. The following folders and settings are required:
 
-- Clone this.
-- Create an `h2` folder on your desktop.
-- Place the downloaded DB file (`soloBear.my.db`) in the `h2` folder.
-- Run it with eclipse.exe or similar and it will work. (Operation confirmed as of 2025-11-14)
-- Default login credentials:
-  - ID: test
+- Clone this repository. (Example: `git clone https://github.com/shiokuma000/portfolio.git your-folder-name`)  
+- Create an `h2` folder on your desktop.  
+- Place the DB files (`soloBear.my.db`, `soloBear.trace.db`) into the `h2` folder.  
+- In Eclipse, select the project → Right-click → “Run on Server” (Confirmed working on 2025-11-14)  
+- Initial login credentials:  
+  - ID: test  
   - Password: test
 
-※ Security is not guaranteed. Please use this for development and testing purposes only.
-
-※ We plan to convert it to Maven in the future and improve it so that it can be connected even without this.
-
+※ Security is not guaranteed. Use for development and testing purposes only.  
+※ Future updates will migrate to Maven, allowing connection without the DB files.
 
 ---
 
-## 💻 Technical Highlights
+## 🔧 Technical Details
 
-| Layer | Technology |
-|-------|------------|
-| ⚡ Frontend | HTML / CSS / JavaScript to build an interactive UI |
-| 🖥️ Backend | Simple server processing and data management for core functionality |
-| 🚀 Extensibility | Future additions such as like counts and notifications are possible |
+| Layer | Details / Intent |
+|-------|----------------|
+| 🗄️ DB | Maintains integrity with 3 tables + foreign keys |
+| 🔐 Security | Passwords hashed and salted with BCrypt |
+| ⚡ Frontend | Posting cards and animations for intuitive UX |
+| 🖥️ Backend | Simple post management with PRG pattern |
+| 🧩 Debugging | Cache handling and log checks for stable operation and improved development efficiency |
 
 ---
 
@@ -75,76 +79,59 @@ To run it, the following folder and settings are required:
 
 | Item | Description |
 |------|-------------|
-| 💖 Like count & state saving | Currently visual only; will store per-user data in the database in the future |
-| 🔁 Replies & Reposts | Planning to add interactions and sharing features for posts |
-| 🧑‍💻 New user registration | Will support registration for any user |
-| 🔐 Password reset | Will support email/SMS-based password reset for forgotten passwords |
+| 💖 Like Count & State Saving | Future plan to save per user in DB |
+| 🔁 Reply & Repost | Considering adding interaction and sharing features for posts |
+| 🧑‍💻 New User Registration | Plan to allow anyone to register |
+
+※ The current Like feature is cosmetic only, but we are retaining the LIKES table and related SQL in preparation for future implementation.
 
 ---
 
-## 🎬 Demo
+## 📚 Project Structure & Design Documents
 
-| Like |   | Post & Delete |
-|------|---|---------------|
-| <img src="assets/like.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
-
-*Click on the GIFs to enlarge*
-
-## 🛠 Tools Used
-
-- ✂️ Video Editing: CapCut
-- 🎞 GIF Generation: Rakko Tool
-- 🔄 MP4 Conversion: FreeConvert
-- 🗜 GIF Compression: iLoveIMG
-
----
-
-## 📚 Design Documents
-
-Links to detailed design documents for soloBear's processes and database structure.  
-Click to view each document.
-
+- [🪄 Project Structure](PROJECT.md)  
 - [🔑 Login Process Design](document/LOGIN.md)  
-  Details of the user login flow, screen structure, and session management
-
 - [📝 Logout Process Design](document/LOGOUT.md)  
-  Details of the logout flow for logged-in users
-
-- [✏️ Posting & Deleting Process Design](document/MAIN.md)  
-  Detailed flow for adding and deleting posts, based on MVC structure
-
+- [✏️ Post/Delete Process Design](document/MAIN.md)  
 - [🗄️ SQL Table Design](document/ER.md)  
-  Structure, constraints, and notes for USERS / MUTTERS / LIKES tables
 
 ---
 
-## 💡 License and Copyright
+## 🚀 Demo
 
-- This project was created for educational purposes and is not intended for commercial use.
-- Licenses for various libraries and tools belong to their respective authors.
+| Like |   | Post/Delete |
+|------|---|-------------|
+| <img src="assets/like.gif" width="280" /> |   | <img src="assets/post.gif" width="300" /> |
 
----
-
-## 📸 Illustration Credits
-
-Illustration source: Footprints – Pixabay  
-https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88-%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88-%E8%B6%B3-1314467/
+※ Click images to enlarge.
 
 ---
 
-## 🗓️Last ​​updated
+## 💡 License & Copyright
 
-2025-11-14
+- This project was created for learning purposes and is not intended for commercial use.  
+- Licenses of libraries and tools belong to their respective authors.
+
+---
+
+## 📸 References
+
+Illustration source: Footprint illustration – Pixabay  
+
+---
+
+## 🗓️ Last Updated
+
+2025-11-16
 
 ---
 
 ## 🌟 Special Thanks
 
-Lastly,
+Finally, thanks to:
 
-- All the instructors at the vocational training school who taught me valuable skills  
+- All instructors who taught skills at the vocational training school  
 - TengouIwaharu722  
-- Everyone who has visited this page  
+- Everyone visiting this page  
 
-Thank you very much! I will continue to do my best.
-
+I sincerely appreciate your support and will continue to improve!

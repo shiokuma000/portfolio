@@ -4,11 +4,33 @@
 
 ---
 
+## 👩‍💻 使用技術
+
+
+<p align="left">
+  <!-- Frontend：濃いチャコール -->
+  <img src="https://img.shields.io/badge/HTML-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-3A3A3A.svg?style=for-the-badge&logoColor=white" />
+
+  <!-- Backend：ほぼ黒のダークグレー -->
+  <img src="https://img.shields.io/badge/Java-1E1E1E.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Servlet%2FJSP-1E1E1E.svg?style=for-the-badge&logo=java&logoColor=white" />
+
+  <!-- Tools / DB：完全ブラック -->
+  <img src="https://img.shields.io/badge/H2%20Database-000000.svg?style=for-the-badge&logo=h2&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache%20Tomcat-000000.svg?style=for-the-badge&logo=apache-tomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-000000.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-000000.svg?style=for-the-badge&logo=github&logoColor=white" />
+</p>
+
+---
+
 ## ✨ 概要
-soloBearは、Twitter風のシンプルなマイクロブログアプリです。  
-授業で作ったプログラムをベースに、自分なりに機能やデザインをアレンジして開発しました。  
-カード形式のレイアウトにより、投稿が整理され読みやすく、どの環境でも上品で見やすい表示を提供しています。  
-いいねボタンには、ハートの周りに柔らかな円が浮かぶ控えめなアニメーションを実装し、操作に対する優しいフィードバックを演出しています。
+
+soloBear は、短文投稿とシンプルなやり取りを楽しめる、カード型デザインの小型ブログアプリです。
+職業訓練校の授業で作ったプログラムをベースに、自分なりに機能やデザインをアレンジし、開発しました。
+カード形式とアニメーションで、直感的かつ心地よい操作体験を提供しています。
 
 ---
 
@@ -23,33 +45,15 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 ---
 
-## 🔧 裏側の仕組み
-
-| 項目 | 説明 |
-|------|--------------|
-| 🗄️ データベース | 3つのテーブル構成で外部キーを管理し、データ整合性を保持 |
-| 🔐 セキュリティ | パスワードはBcryptでハッシュ化・ソルト済み、安全に管理 |
-| 🧩 キャッシュ・デバッグ | キャッシュ対策やデバッグ確認を行い、安定した動作を実現 |
-
----
-
-## 💼 プロジェクト構成
-
-- [🪄 プロジェクト構成](PROJECT.md)
-
-  こちらに掲載しております、目を通していただけましたら幸いです。
-
----
-
 ## 🚀 セットアップ
 
 このアプリはダウンロードしてローカルで動作させることができます。
 実行にあたり、以下のフォルダと設定が必要です。
 
-- こちらをcloneしてください。
+- このリポジトリを clone してください。（例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
 - `h2` フォルダをデスクトップに作成してください。
-- ダウンロードした DB ファイル（`soloBear.my.db`）を `h2` フォルダに入れてください。
-- eclipse.exeなどで実行すると動作いたします。（2025-11-14 動作確認済み）
+- DBファイル（`soloBear.my.db`,`soloBear.trace.db`)を `h2` フォルダに入れてください。
+- Eclipseなどでプロジェクトを選択 → 右クリック → 「サーバーで実行」(2025-11-14 動作確認済）
 - 初期ログイン情報  
   - ID: test  
   - Password: test
@@ -60,13 +64,15 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 ---
 
-## 💻 技術ポイント
+## 🔧 技術的工夫
 
-| レイヤー | 技術 |
-|-------|-------------|
-| ⚡ フロントエンド | HTML / CSS / JavaScriptでインタラクティブなUIを構築 |
-| 🖥️ バックエンド | シンプルなサーバー処理とデータ管理で基本機能を提供 |
-| 🚀 拡張性 | いいねカウントや通知機能など、将来的な機能追加が可能 |
+| レイヤー | 工夫・意図 |
+|----------|------------|
+| 🗄️ DB | 3テーブル＋外部キーで整合性を保持 |
+| 🔐 セキュリティ | BCryptでハッシュ化・ソルト済み |
+| ⚡ フロントエンド | 投稿カード・アニメで直感的UX |
+| 🖥️ バックエンド | 投稿管理をシンプルに実現・PRGパターン |
+| 🧩 デバッグ | キャッシュ対策でとログ確認で安定動作・開発効率向上 |
 
 ---
 
@@ -74,29 +80,22 @@ soloBearは、Twitter風のシンプルなマイクロブログアプリです�
 
 | 項目 | 説明 |
 |------|--------------|
-| 💖 いいねカウント・状態保存 | 現在は見た目のみ。今後はユーザーごとにDBに保存予定 |
+| 💖 いいね数表示・状態保存 | 今後はユーザーごとにDBに保存予定 |
 | 🔁 リプライ・リポスト | 投稿に対するやり取りや共有機能の追加を検討中 |
 | 🧑‍💻 新規ユーザー登録 | 誰でも登録できるように対応予定 |
-| 🔐 パスワードリセット | パスワード忘れ時にメールやSMSでリセット可能に対応予定 |
+
+※ 現在のいいね機能は見た目のみですが、将来的な実装に備えて
+   LIKESテーブルおよび関連SQLは保持しています。
 
 ---
 
-## 📚 設計書一覧
+## 📚 プロジェクト構成・設計書一覧
 
-soloBear の各処理やデータベース設計に関する詳細設計書へのリンクです。  
-クリックするとそれぞれの設計書が開きます。
-
+- [🪄 プロジェクト構成](PROJECT.md)
 - [🔑 ログイン処理設計書](document/LOGIN.md)  
-  ユーザーがログインするまでの処理フローと画面構成、セッション管理の詳細
-
 - [📝 ログアウト処理設計書](document/LOGOUT.md)   
-  ログイン中のユーザーがログアウトするまでの処理フローと画面構成
-
 - [✏️ 投稿・削除処理設計書](document/MAIN.md)  
-  投稿の追加・削除処理のフロー、MVC構成に基づく詳細説明
-
 - [🗄️ SQLテーブル設計書](document/ER.md)    
-  USERS / MUTTERS / LIKES のテーブル構成、制約、備考をまとめた設計書
 
 ---
 
@@ -104,14 +103,9 @@ soloBear の各処理やデータベース設計に関する詳細設計書へ�
 
 | いいね |   | 投稿・削除 |
 |----------------|---|-------------------|
-| <img src="assets/likes.gif" width="300" /> |   | <img src="assets/post.gif" width="300" /> |
+| <img src="assets/like.gif" width="280" /> |   | <img src="assets/post.gif" width="300" /> |
 
-## 🛠 使用したツール
-
-- ✂️ ビデオ編集：CapCut
-- 🎞 GIF画像生成：ラッコツール
-- 🔄 MP4変換：FreeConvert
-- 🗜 GIF軽量化：iLoveIMG
+※画像をクリックすると拡大表示されます。
 
 ---
 
@@ -125,13 +119,12 @@ soloBear の各処理やデータベース設計に関する詳細設計書へ�
 ## 📸 引用
 
 イラストの出典: 足跡のイラスト – Pixabay  
-https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88-%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88-%E8%B6%B3-1314467/
 
 ---
 
 ## 🗓️最終更新日
 
-2025-11-14
+2025-11-16
 
 ---
 
@@ -141,6 +134,6 @@ https://pixabay.com/ja/illustrations/%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%
 
 - 職業訓練校でスキルを授けてくださった講師の皆様
 - TengouIwaharu722 様
-- このページを見てくださった方
+- このページを見てくださった皆様
 
 本当にありがとうございます！これからも精進いたします
