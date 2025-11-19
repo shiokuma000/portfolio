@@ -48,18 +48,32 @@ Using card layouts and animations, it provides an intuitive and pleasant user ex
 
 ## 🚀 Setup
 
-This app can be downloaded and run locally. The following folders and settings are required:
+This app can be downloaded and run locally. It is intended for development and testing purposes.
 
-- Clone this repository. (Example: `git clone https://github.com/shiokuma000/portfolio.git your-folder-name`)  
-- Create an `h2` folder on your desktop.  
-- Place the DB files (`soloBear.my.db`, `soloBear.trace.db`) into the `h2` folder.  
-- In Eclipse, select the project → Right-click → “Run on Server” (Confirmed working on 2025-11-14)  
-- Initial login credentials:  
-  - ID: test  
-  - Password: test
+The following folders and settings are required to run the app:
 
-※ Security is not guaranteed. Use for development and testing purposes only.  
-※ Future updates will migrate to Maven, allowing connection without the DB files.
+1. Clone this repository
+
+- (Example: `git clone https://github.com/shiokuma000/portfolio.git your-folder-name`)
+
+2. Create folders
+- Create an `h2` folder on your desktop.
+- Place the DB files inside:
+  - `soloBear.my.db`
+  - `soloBear.trace.db`
+  
+3. In Eclipse (or similar IDE), select the project
+- → Right-click → "Run on Server"
+- Confirmed working (2025-11-14)
+
+4. Initial login credentials  
+- ID: test  
+- Password: test  
+※ Security is not guaranteed. Use for development and testing purposes only.
+
+5. Future plans
+- Plan to migrate to Maven so that the app can connect without these files.
+
 
 ---
 
