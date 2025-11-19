@@ -2,8 +2,7 @@
 
 🌏 Language Switch: [日本語](README.md) | [English](README-en.md)
 
-※I'm sorry if there are parts that are hard to read because I'm using a translator.
-
+※Some parts may be hard to read due to translation.
 ---
 
 ## 👩‍💻 Technologies Used
@@ -29,7 +28,7 @@
 
 ## ✨ Overview
 
-soloBear is a small blog app with a card-style design that allows you to enjoy short posts and simple interactions.
+soloBear is a simple, Twitter-style microblog app with a card-style design that allows you to enjoy short posts and simple interactions.
 It is based on a program created during a vocational training class, which I customized with my own features and design improvements.  
 Using card layouts and animations, it provides an intuitive and pleasant user experience.
 
@@ -93,7 +92,7 @@ The following folders and settings are required to run the app:
 
 | Item | Description |
 |------|-------------|
-| 💖 Like Count & State Saving | Future plan to save per user in DB |
+| 💖 Like Count & State Saving | Planned to save per user in the database in the future |
 | 🔁 Reply & Repost | Considering adding interaction and sharing features for posts |
 | 🧑‍💻 New User Registration | Plan to allow anyone to register |
 
