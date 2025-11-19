@@ -51,7 +51,8 @@ soloBear は、短文投稿とシンプルなやり取りを楽しめる、カ�
 実行にあたり、以下のフォルダと設定が必要です。
 
 1.このリポジトリを clone
--（例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
+
+- （例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
 
 2. フォルダ作成
 - `h2` フォルダをデスクトップに作成してください。
