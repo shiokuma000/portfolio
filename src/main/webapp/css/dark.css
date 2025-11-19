@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+html { font-size: 125%; }
+
 /* 全体 */
 body {
     font-family: "Georgia", serif;
@@ -7,14 +9,13 @@ body {
     margin: 0;
     padding: 0;
     color: #e0e3eb; /* 柔らかい白 */
-    font-size: 125%;
 }
 
 /* ページタイトル */
 h1 {
     text-align: center;
     color: #e0e3eb;
-    margin-top: 25px;
+    margin-top: 1.6rem;
     font-weight: normal;
 }
 
@@ -22,8 +23,8 @@ h1 {
 .container {
     max-width: 750px;
     width: 95%;
-    margin: 25px auto;
-    padding: 0 12px;
+    margin: 1.6rem auto;
+    padding: 0 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,9 +35,9 @@ h1 {
 .card {
     background: #1b263b;
     border: 1px solid #2e3a4d;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 25px 31px;
-    margin: 12px auto;
+    margin-bottom: 25px;
     width: 100%;
     max-width: 625px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.25);
@@ -49,8 +50,8 @@ h1 {
 .card p {
     width: 100%;
     max-width: 625px;
-    padding: 19px 25px;
-    margin: 12px auto;
+    padding: 18.75px 25px;
+    margin: 12.5px auto;
     box-sizing: border-box;
     border-radius: 12px;
     box-shadow: 0 2.5px 12.5px rgba(0,0,0,0.08);
@@ -67,7 +68,7 @@ h1 {
 /* フォーム */
 form {
     display: flex;
-    gap: 12px;
+    gap: 12.5px;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 25px;
@@ -83,6 +84,7 @@ input[type="text"], input[type="password"] {
     color: #e0e3eb;
     outline: none;
     transition: border 0.2s, background-color 0.2s;
+    font-size: 1rem;
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
