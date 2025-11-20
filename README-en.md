@@ -129,13 +129,13 @@ The following folders and settings are required to run the app:
 
 ## 📸 References
 
-Illustration source: Footprint illustration – Pixabay  
+Illustration credit: Elionas – Pixabay
 
 ---
 
 ## 🗓️ Last Updated
 
-2025-11-19
+2025-11-21
 
 ---
 
