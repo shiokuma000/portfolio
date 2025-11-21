@@ -12,7 +12,7 @@ public class DBInit {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         Class.forName("org.h2.Driver");
         // プロジェクト直下 data フォルダ内 DB を使用
-        return DriverManager.getConnection("jdbc:h2:./data/solobear;AUTO_SERVER=TRUE", "sa", "");
+        return DriverManager.getConnection("jdbc:h2:./data/soloBear;AUTO_SERVER=TRUE", "sa", "");
     }
 
     public static void initialize() {
