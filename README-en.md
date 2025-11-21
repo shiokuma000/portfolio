@@ -55,24 +55,15 @@ The following folders and settings are required to run the app:
 
 - (Example: `git clone https://github.com/shiokuma000/portfolio.git your-folder-name`)
 
-2. Create folders
-- Create an `h2` folder on your desktop.
-- Place the DB files inside:
-  - `soloBear.my.db`
-  - `soloBear.trace.db`
   
-3. In Eclipse (or similar IDE), select the project
+2. In Eclipse (or similar IDE), select the project
 - → Right-click → "Run on Server"
 - Confirmed working (2025-11-14)
 
-4. Initial login credentials  
+3. Initial login credentials  
 - ID: test  
 - Password: test  
 ※ Security is not guaranteed. Use for development and testing purposes only.
-
-5. Future plans
-- Plan to migrate to Maven so that the app can connect without these files.
-
 
 ---
 
