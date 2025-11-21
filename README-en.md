@@ -58,7 +58,7 @@ The following folders and settings are required to run the app:
   
 2. In Eclipse (or similar IDE), select the project
 - → Right-click → "Run on Server"
-- Confirmed working (2025-11-14)
+- Confirmed working (2025-11-21)
 
 3. Initial login credentials  
 - ID: test  
