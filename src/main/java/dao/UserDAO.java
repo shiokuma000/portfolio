@@ -1,11 +1,12 @@
 package dao;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import model.User;
+import model.DBInit;
 import util.PasswordUtil;
 
 /**
@@ -14,20 +15,6 @@ import util.PasswordUtil;
  * - ログイン時はPasswordUtil.checkPasswordで照合
  */
 public class UserDAO {
-
-	private final String JDBC_URL = "jdbc:h2:~/desktop/h2/soloBear";
-	private final String DB_USER = "sa";
-	private final String DB_PASS = "";
-
-
-    // コンストラクタでH2ドライバをロード
-    public UserDAO() {
-        try {
-            Class.forName("org.h2.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 
     /**
      * ログイン処理
@@ -38,28 +25,24 @@ public class UserDAO {
         User foundUser = null;
         String sql = "SELECT ID, LOGIN_NAME, NAME, PASS FROM USERS WHERE LOGIN_NAME = ?";
 
-        try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
+        try (Connection conn = DBInit.getConnection();
              PreparedStatement pStmt = conn.prepareStatement(sql)) {
 
             pStmt.setString(1, user.getLoginName());
             ResultSet rs = pStmt.executeQuery();
 
             if (rs.next()) {
-                String storedHash = rs.getString("PASS"); // DBに保存されているソルト付きハッシュ
+                String storedHash = rs.getString("PASS");
 
-                // 入力パスワードと照合
-                boolean matched = PasswordUtil.checkPassword(user.getPass(), storedHash);
-
-                if (matched) {
+                if (PasswordUtil.checkPassword(user.getPass(), storedHash)) {
                     int id = rs.getInt("ID");
                     String loginName = rs.getString("LOGIN_NAME");
                     String name = rs.getString("NAME");
 
-                    // パスワードは返さない
                     foundUser = new User(id, loginName, name, null);
                 }
             }
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 
@@ -74,20 +57,18 @@ public class UserDAO {
     public boolean insert(User user) {
         String sql = "INSERT INTO USERS (LOGIN_NAME, NAME, PASS) VALUES (?, ?, ?)";
 
-        try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS);
+        try (Connection conn = DBInit.getConnection();
              PreparedStatement pStmt = conn.prepareStatement(sql)) {
 
-            // パスワードをSHA-256 + ソルトでハッシュ化
             String hashed = PasswordUtil.hashPassword(user.getPass());
 
             pStmt.setString(1, user.getLoginName());
             pStmt.setString(2, user.getName());
             pStmt.setString(3, hashed);
 
-            int result = pStmt.executeUpdate();
-            return result == 1;
+            return pStmt.executeUpdate() == 1;
 
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             return false;
         }
