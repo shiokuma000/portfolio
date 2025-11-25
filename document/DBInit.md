@@ -51,5 +51,5 @@
 3. `DBInit.initialize()` 呼び出し  
    - DB 接続 (`getConnection()`)  
    - テーブル作成（USERS, MUTTERS, LIKES）  
-   - 初期データ挿入（ユーザー、つぶやき）  
+   - 初期データ挿入（USERS、MUTTERS）  
 4. 初期化完了メッセージ出力  
