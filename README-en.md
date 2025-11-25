@@ -56,9 +56,9 @@ The following folders and settings are required to run the app:
 - (Example: `git clone https://github.com/shiokuma000/portfolio.git your-folder-name`)
 
   
-2. In Eclipse (or similar IDE), select the project
+2. Import into Eclipse or similar IDE, then select the project.
 - → Right-click → "Run on Server"
-- Confirmed working (2025-11-21)
+- Confirmed working (2025-11-25)
 
 3. Initial login credentials  
 - ID: test  
