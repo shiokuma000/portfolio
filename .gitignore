@@ -42,6 +42,7 @@ src/main/java/test/LikeDAOTest.java
 
 # === drawio ===
 document/drawio/soloBear.drawio
+document/drawio/Bear.drawio
 # png にしたので抜いてます
 
 # データベースファイルを無視
