@@ -98,7 +98,8 @@ soloBear は、カード型デザインで短文投稿とシンプルなやり�
 - [🔑 ログイン処理設計書](document/LOGIN.md)  
 - [📝 ログアウト処理設計書](document/LOGOUT.md)   
 - [✏️ 投稿・削除処理設計書](document/MAIN.md)  
-- [🗄️ SQLテーブル設計書](document/ER.md)    
+- [🗄️ SQLテーブル設計書](document/ER.md)
+- [🌗 SQL初期化処理設計書](document/DBInit.md)    
 
 ---
 
