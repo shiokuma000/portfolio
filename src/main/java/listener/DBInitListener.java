@@ -1,8 +1,10 @@
 package listener;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
+
 import model.DBInit;
 
 @WebListener
@@ -10,6 +12,14 @@ public class DBInitListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
+    	ServletContext context = sce.getServletContext();
+        String dataFolderPath = context.getRealPath("/data");
+        System.out.println("dataFolderPath = " + dataFolderPath);
+
+        // DBInit にセット
+        DBInit.dataFolderPath = dataFolderPath;
+
+
         // サーバー起動時に DB を初期化
         try {
             DBInit.initialize();

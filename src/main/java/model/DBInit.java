@@ -8,11 +8,19 @@ import java.sql.Statement;
 
 public class DBInit {
 
+	// アプリケーション全体で使う DB パス
+    public static String dataFolderPath;
+
     // --- DB 接続 ---
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
+
         Class.forName("org.h2.Driver");
+        // 絶対パスを使うように変更
+        String dbPath = dataFolderPath + "/soloBear";
+        return DriverManager.getConnection("jdbc:h2:" + dbPath + ";AUTO_SERVER=TRUE", "sa", "");
+
         // プロジェクト直下 data フォルダ内 DB を使用
-        return DriverManager.getConnection("jdbc:h2:./data/soloBear;AUTO_SERVER=TRUE", "sa", "");
+        //return DriverManager.getConnection("jdbc:h2:./data/soloBear;AUTO_SERVER=TRUE", "sa", "");
     }
 
     public static void initialize() {
