@@ -98,6 +98,7 @@ The following folders and settings are required to run the app:
 - [📝 Logout Process Design](document/LOGOUT.md)  
 - [✏️ Post/Delete Process Design](document/MAIN.md)  
 - [🗄️ SQL Table Design](document/ER.md)  
+- [🌗 SQL Initialization Design Document](document/DBInit.md)
 
 ---
 
