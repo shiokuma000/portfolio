@@ -55,9 +55,9 @@ soloBear は、カード型デザインで短文投稿とシンプルなやり�
 
 - （例：`git clone https://github.com/shiokuma000/portfolio.git 任意のフォルダ名`）
   
-2. Eclipseなどでプロジェクトを選択
+2. Eclipseなどにインポート、プロジェクトを選択
 - →右クリック → 「サーバーで実行」
-- 動作確認済(2025-11-21）
+- 動作確認済(2025-11-25）
 
 3. 初期ログイン情報  
 - ID: test  
@@ -98,7 +98,8 @@ soloBear は、カード型デザインで短文投稿とシンプルなやり�
 - [🔑 ログイン処理設計書](document/LOGIN.md)  
 - [📝 ログアウト処理設計書](document/LOGOUT.md)   
 - [✏️ 投稿・削除処理設計書](document/MAIN.md)  
-- [🗄️ SQLテーブル設計書](document/ER.md)    
+- [🗄️ SQLテーブル設計書](document/ER.md)
+- [🌗 SQL初期化処理設計書](document/DBInit.md)    
 
 ---
 

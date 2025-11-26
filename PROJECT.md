@@ -17,14 +17,6 @@
 </details>
 
 <details>
-<summary>🔒db</summary>
-
-- `soloBear.my.db`
-- `soloBear.trace.db`
-
-</details>
-
-<details>
 <summary>📄document</summary>
 <details>
 <summary>drawio</summary>
