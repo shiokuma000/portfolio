@@ -39,16 +39,6 @@
 <summary>💻src/main/java</summary>
 
 <details>
-<summary>🎬servlet</summary>
-
-- `DriverCleanupListener.java`
-- `Login.java`
-- `Logout.java`
-- `Main.java`
-
-</details>
-
-<details>
 <summary>dao</summary>
 
 - `MuttersDAO.java`
@@ -72,7 +62,7 @@
 
 
 <details>
-<summary>☕️model</summary>
+<summary>model</summary>
 
 - `DBInit.java`
 - `GetMutterListLogic.java`
@@ -80,6 +70,17 @@
 - `Mutter.java`
 - `PostMutterLogic.java`
 - `User.java`
+
+</details>
+
+<details>
+    
+<summary>servlet</summary>
+
+- `DriverCleanupListener.java`
+- `Login.java`
+- `Logout.java`
+- `Main.java`
 
 </details>
 
