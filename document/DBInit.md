@@ -21,7 +21,7 @@
 **色分け情報：**  
 - Listener（サーブレットリスナー） → 緑  
 - Model（DBInit） → 青  
-- SQLテーブル   →  黄黄
+- SQLテーブル   →  黄
 
 ### 3-1. 処理フロー図
 [![DB初期化処理図](drawio/db.png)](drawio/db.png)
