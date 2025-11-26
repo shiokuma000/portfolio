@@ -1,4 +1,4 @@
-package servlet;
+package listener;
 
 import java.sql.Driver;
 import java.sql.DriverManager;
@@ -9,9 +9,7 @@ import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 
-/**
- * 未使用？
- */
+
 @WebListener
 public class DriverCleanupListener implements ServletContextListener {
 

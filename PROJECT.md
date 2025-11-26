@@ -39,14 +39,6 @@
 <summary>💻src/main/java</summary>
 
 <details>
-<summary>🎬servlet</summary>
-
-- `DriverCleanupListener.java`
-- `Login.java`
-- `Logout.java`
-- `Main.java`
-
-</details>
 
 <details>
 <summary>dao</summary>
@@ -67,12 +59,13 @@
 <summary>listener</summary>
 
 - `DBInitListener.java`
+- `DriverCleanupListener.java`
 
 </details>
 
 
 <details>
-<summary>☕️model</summary>
+<summary>model</summary>
 
 - `DBInit.java`
 - `GetMutterListLogic.java`
@@ -80,6 +73,14 @@
 - `Mutter.java`
 - `PostMutterLogic.java`
 - `User.java`
+
+</details>
+
+<summary>servlet</summary>
+
+- `Login.java`
+- `Logout.java`
+- `Main.java`
 
 </details>
 
@@ -131,14 +132,6 @@
 <summary>🧸WEB-INF</summary>
 
 <details>
-<summary>🖼jsp</summary>
-
-- `logout.jsp`
-- `mainEL.jsp`
-
-</details>
-
-<details>
 <summary>📚lib</summary>
 
 - `h2-2.3.232.jar`
@@ -146,6 +139,15 @@
 - `jakarta.servlet.jsp.jstl-api-3.0.0.jar`
 - `jakarta.servlet-api-6.0.0.jar`
 - `jbcrypt-0.4.jar`
+
+</details>
+
+<details>
+
+<summary>🖼jsp</summary>
+
+- `logout.jsp`
+- `mainEL.jsp`
 
 </details>
 
