@@ -39,8 +39,6 @@
 <summary>💻src/main/java</summary>
 
 <details>
-
-<details>
 <summary>dao</summary>
 
 - `MuttersDAO.java`
@@ -75,6 +73,8 @@
 - `User.java`
 
 </details>
+
+<details>
 
 <summary>servlet</summary>
 
