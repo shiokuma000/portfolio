@@ -39,8 +39,6 @@
 <summary>💻src/main/java</summary>
 
 <details>
-
-<details>
 <summary>dao</summary>
 
 - `MuttersDAO.java`
@@ -78,6 +76,17 @@
 
 <summary>servlet</summary>
 
+- `Login.java`
+- `Logout.java`
+- `Main.java`
+
+</details>
+
+<details>
+    
+<summary>servlet</summary>
+
+- `DriverCleanupListener.java`
 - `Login.java`
 - `Logout.java`
 - `Main.java`
