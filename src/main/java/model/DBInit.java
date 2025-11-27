@@ -65,7 +65,7 @@ public class DBInit {
             stmt.execute(sqlLikes);
 
             // --- 初期データ挿入 ---
-            insertUserIfNotExists(conn, "osio001", "osio", " $2a$12$ZEa1zuihcatevkL5TRJUiux.SomWt6keULI/xk/mEEyvNtIRf4kmK");
+            insertUserIfNotExists(conn, "osio001", "osio", "$2a$12$BP17FsIJNWkrN9cMPy.O1eEUtErL84b5r7wUTdqy0YMHmoPK4eRuu");
             insertUserIfNotExists(conn, "kuma_3", "kuma", "$2a$12$PgBunqNiVJzJmFM6BNL8zu5PZhW4EPHoEvn/fw2db9P4vJiKkggeu");
             insertUserIfNotExists(conn, "test", "くまと遊ぼ", "$2a$12$hn4sz6KoJXXCP21knZ0HA.zCqpN4Y1ZCvcZKyyYHPcOvcesukk/hu");
             insertUserIfNotExists(conn, "siokumahonpo", "saltBear", "$2a$12$zYxYtC2RRx1wOvaPwEK4E.ZMa5Sqjcp6bYRmdYFBfBEqy.FpgLIXy");
