@@ -91,6 +91,23 @@ The following folders and settings are required to run the app:
 
 ---
 
+## 🔐 Security Design & Threat Model
+
+This application considers the following threats:
+
+- Unauthorized login attempts (e.g. brute-force attacks, leaked passwords)
+- Plaintext password exposure
+- Post impersonation
+- Unauthorized post deletion
+
+### Countermeasures
+
+- Password hashing using BCrypt
+- Login control via session management
+- User identity verification when creating and deleting posts
+
+---
+
 ## 📚 Project Structure & Design Documents
 
 - [🪄 Project Structure](PROJECT.md)  
